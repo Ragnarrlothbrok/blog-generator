@@ -1,0 +1,17 @@
+.layout {
+  overflow: hidden;
+}
+
+.main {
+  overflow: scroll;
+}
+
+@media screen and (max-width: 576px) {
+  .layout {
+    grid-template-columns: 1fr;
+  }
+
+  .main {
+    padding-bottom: 3em;
+  }
+}

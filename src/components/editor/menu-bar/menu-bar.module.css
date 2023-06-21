@@ -1,0 +1,46 @@
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.1em;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #fff;
+  position: relative;
+  z-index: 2;
+}
+
+.menu button {
+  flex-grow: 1;
+  font: inherit;
+  font-size: 13px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding: 0.75em;
+  background-color: transparent;
+  color: var(--lines-dark);
+  border: none;
+  cursor: pointer;
+}
+
+.menu .active {
+  border-radius: 10px;
+  color: var(--accent);
+  font-weight: 900;
+}
+
+.menu .bold {
+  font-weight: 900;
+}
+
+.menu .italic {
+  font-family: serif;
+  font-style: italic;
+  font-weight: 900;
+}
+
+@media screen and (max-width: 576px) {
+  .menu button {
+    font-size: 12px !important;
+  }
+}
